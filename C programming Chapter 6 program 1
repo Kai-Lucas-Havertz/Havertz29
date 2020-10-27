@@ -1,0 +1,20 @@
+#include <stdio.h>
+
+int main(void) {
+	float number = 1;
+	float biggest_number = 0;
+
+	do {
+		printf("Enter the Number above 0\n");
+		scanf("%f", &number);
+
+		if (number > biggest_number)
+
+			biggest_number = number;
+
+	} while (number > 0);
+
+	printf("The biggest number is %f\n", biggest_number);
+
+	return 0;
+}
